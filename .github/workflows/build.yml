@@ -19,7 +19,7 @@ jobs:
         make -C spk/qbittorrent-enhanced ARCH=x64 DSM_VER=7.2
 
     - name: Upload SPK artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: qbittorrent-enhanced_x64-7.2
         path: packages/qbittorrent-enhanced/releases/*.spk
