@@ -1,0 +1,12 @@
+#!/bin/sh
+CONF_DIR="${SYNOPKG_PKGVAR}/.config/qBittorrent"
+CONF_FILE="${CONF_DIR}/qBittorrent.conf"
+
+mkdir -p "${CONF_DIR}"
+
+cat > "${CONF_FILE}" <<EOF
+[Preferences]
+WebUI\Username=admin
+WebUI\Password_PBKDF2=@ByteArray(ThisIsAPlaceholderHash)
+EOF
+exit 0
