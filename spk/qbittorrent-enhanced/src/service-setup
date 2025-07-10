@@ -7,6 +7,6 @@ mkdir -p "${CONF_DIR}"
 cat > "${CONF_FILE}" <<EOF
 [Preferences]
 WebUI\Username=admin
-WebUI\Password_PBKDF2=@ByteArray(ThisIsAPlaceholderHash)
+WebUI\Password_PBKDF2=36:52:51:C3:50:71:19:50:9A:1C:F0:37:62:61:F5:51:3B:48:2D:76:DF:4B:ED:BA:7E:AC:6B:53:54:90:95:64
 EOF
 exit 0
